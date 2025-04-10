@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "Poppins", serif !important;
+}
+html{
+  scroll-behavior: smooth;
+}
+:root {
+  --richred-900: #A62B00;
+  --gray-5: #EBEBEB;
+}
+.footer_main{
+  background-image: url('./assets/denom.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.ty_ing{
+  margin-top: 20px;
+}
+.footer_double_main{
+  padding: 40px 40px;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer_logo p{
+  color:  #101729;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: .9;
+  /* font-family: "Roboto", serif !important; */
+  width: 21em;
+  max-width: 100%;
+  margin-top: 20px;
+  line-height: 24px;
+}
+.second_footer h3{
+  color:  #263238;
+  font-weight: 500;
+  font-size: 24px;
+  /* font-family: "Roboto", serif !important; */
+}
+.second_footer p{
+  color:  #263238;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: .95;
+  line-height: 24px;
+  padding: 8px 0px;
+}
+.third_footer h3{
+  color: #263238;
+  font-weight: 500;
+  font-size: 24px;
+  /* font-family: "Roboto", serif !important; */
+}
+.side_flex{
+  display: flex;
+  /* align-items: flex-start; */
+  /* align-items: center; */
+  gap: 15px;
+  margin: 25px 0px;
+}
+.contact_side{
+  margin-top: 20px;
+}
+.side_flex p{
+  color: #263238;
+  font-size: 15px;
+  font-weight: 400;
+  /* font-family: "Roboto", serif !important; */
+}
+.side_flex p:hover{
+  color: #0DAC50;
+}
+.fourth_footer h3{
+  color: #263238;
+  font-weight: 500;
+  font-size: 24px;
+  /* font-family: "Roboto", serif !important; */
+  /* margin-left: 15px; */
+}
+.fourth_footer p{
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Roboto", serif !important;
+  width: 21em;
+  max-width: 100%;
+  line-height: 24px;
+  margin-top: 25px;
+}
+.msitig{
+  margin-top: 20px;
+}
+
+@media(max-width:550px){
+  .msitig{
+    text-align: center !important;
+    margin: 10px;
+  }
+}
+.msitig a {
+  text-decoration: none;
+  color: inherit; /* inherit current text color */
+  display: block;
+  margin: 20px 0;
+  color: #000000b7;
+  cursor: pointer;
+}
+
+.msitig a:hover {
+  color: #0DAC50; /* or any hover color */
+}
+
+.enter_test{
+  display: flex;
+  position: relative;
+  margin-top: 25px;
+}
+.testy{
+  width: 40px !important;
+  height: 40px !important;
+}
+.single_slide{
+  position: relative !important;
+  transition: .5s;
+}
+.primer{
+  position: absolute;
+  /* right: 1px;
+  top: 1px; */
+}
+.testy{
+  position: absolute !important;
+  right: 14px !important;
+  top: -100px !important;
+  display: none;
+  transition: .5s;
+}
+.single_slide:hover .testy{
+  display: block;
+  transition: .5s;
+}
+.enter_test input{
+  /* width: 100%; */
+  width: 249px;
+  height: 53px;
+  /* border: 1px solid #EDEDED; */
+  border: 1px solid #26323880;
+  background: transparent;
+  padding: 0px 15px;
+  /* font-family: "Wix Madefor Display", serif !important; */
+  color: #000000 !important;
+  font-size: 16px;
+  border-radius: 1px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.enter_test button{
+  background-color:  #0DAC50;
+  width: 51px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  right: 0px;
+}
+.enter_test input::placeholder{
+  font-family: "Poppins", sans-serif !important;
+  color: #263238;
+  font-size: 15px;
+}
+
+/* =======================client app====================== */
+
+.our_client{
+  background-color: #F4F4F9;
+}
+/* .our_client_heading p{
+   text-align: center;
+} */
+.our_brand_flex img{
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+.sisk{
+  color:  #0DAC50;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 41px;
+  font-family: 'Poppins',sans-serif !important;
+}
+.sisk1{
+  color: #101729;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Poppins", serif;
+  margin-top: 15px;
+}
+.asseros{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.newsingk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.our_brand_flex{
+  margin-top: 50px;
+}
+.client_main{
+    max-width: 1440px;
+    display: block;
+    margin: auto;
+    padding: 70px 77px;
+}
+.nameLine{
+  margin-left: 150px;
+}
+.our_client_heading{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ter_seccpa{
+  justify-content: center !important;
+}
+
+.sas_based p{
+   max-width: 482px;
+   width: 100%;
+   color:  #333333;
+   font-size: 16px;
+   font-weight: 400;
+   font-family: "Poppins", serif;
+}
+.sm_ty{
+  width: 360px !important;
+}
+@media (max-width:1200px) {
+
+  .hoemnavbarwap nav{
+    padding: 20px 20px;
+}
+.hoemnavbarwap nav img{
+    max-width: 110px;
+}
+  .hm_s4_cont{
+    padding: 30px 20px;
+  }
+  .testi_cont{
+    padding: 40px 20px;
+  }
+  .weffolo_cont{
+    padding: 20px 20px;
+}
+.newsupdate_cont{
+    padding: 30px 20px ;
+}
+.nameLine{
+  margin: 0px ;
+}
+.footer_double_main{
+  padding: 40px 20px;
+}
+
+.client_main{
+  padding: 40px 20px;
+}
+}
+
+@media (max-width:550px) {
+  .first_footer{
+    width: 100%;
+  }
+  .our_brand_flex img{
+    margin-top: 20px;
+  }
+  .sm_ty{
+    width: 100%;
+  }
+  .footer_logo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .footer_logo p{
+    text-align: center;
+  }
+  .second_footer{
+    margin: 0 auto;
+  }
+  .second_footer p , .second_footer h3{
+    text-align: center;
+  }
+  .third_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .newlinespas{
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .side_flex{
+    justify-content: center;
+  }
+  .fourth_footer{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fourth_footer p , .fourth_footer h3{
+    text-align: center;
+    width: 100%;
+  }
+  .conactofmr button{
+    margin: 0 auto;
+  }
+  .flexconta{
+    flex-direction: column;
+  }
+  .actuaconpa{
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fornpars , .hfdsfds{
+    text-align: center;
+  }
+  .fsfslines {
+   justify-content: center;
+  }
+  .ab_her{
+    height: 500px !important;
+  }
+}
+
+h3{
+  font-size: 23px;
+  font-family: 200 !important;
+}

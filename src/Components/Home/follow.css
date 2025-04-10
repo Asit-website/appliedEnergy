@@ -1,0 +1,293 @@
+.wefolow_wrpa {
+    width: 100%;
+    position: relative;
+    background: #FAFAFA;
+
+}
+
+.weffolo_cont {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 40px 40px 20px;
+}
+
+.wefolow_top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.folow_left {
+    max-width: 236px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+
+.folspara {
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0.13em;
+    text-align: left;
+    color: #101729;
+}
+
+.folow_left h4 {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 41px;
+    text-align: left;
+    color: #88AE5A;
+}
+
+.linesfo {
+    border: 2px solid #C7DA66;
+    width: 138.78px;
+    height: 0px;
+    margin-top: 20px;
+
+}
+
+.folwlefriparas {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    max-width: 920px;
+    width: 100%;
+    color: #666666;
+}
+
+
+.wefolow_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Drop shadow in image */
+
+.drp-shadow {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 240px;
+    border-radius: 10px 10px 70px 10px;
+}
+
+.drp-shadow img {
+    max-width: 410px;
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    display: block;
+    border-radius: inherit;
+}
+
+/* Shadow Effect with Matching Curves */
+.drp-shadow::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    transition: top 0.5s ease-in-out;
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+/* Hover Effect */
+.drp-shadow:hover img {
+    transform: scale(1.05);
+}
+
+.drp-shadow:hover::after {
+    top: 0;
+}
+
+.sngle_folow {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sngle_folow p {
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    text-align: center;
+    user-select: none;
+    pointer-events: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.sngle_folow:hover p {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+.we_follow1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 114px;
+    gap: 120px;
+}
+.we_follow1 h3{
+    color:  #48d884;
+    font-weight: 700;
+    font-size: 72px;
+}
+.follow_set{
+    background-image: url('../../assets/site1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 648px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.flw_sox{
+    background: #FFFFFF;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    height: 608px;
+}
+.flw_img img{
+    width: 100%;
+
+}
+.flw_sx h3{
+    color:  #101729;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.flw_sx p{
+    color:  #101729;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+@media (max-width:850px) {
+    .wefolow_top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .folow_left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .folspara {
+        line-height: 28px;
+    }
+
+    .linesfo {
+        margin-top: 2px;
+    }
+
+    .folwlefriparas {
+        text-align: center;
+    }
+}
+
+@media (max-width:1024px) {
+    .wefolow_bottom {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .folow_left {
+        max-width: 185px;
+        width: 100%;
+    }
+}
+
+@media (max-width:700px) {
+    .hms3secn {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .hms3sle {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
+
+@media (max-width:550px) {
+    .wefolow_bottom {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .folwlefriparas {
+        font-size: 18px;
+        line-height: 28px;
+
+    }
+
+    .wefolow_top {
+        gap: 20px;
+    }
+
+    .weffolo_cont {
+        gap: 20px;
+    }
+
+    .sngle_folow {
+        gap: 4px;
+        margin: 0 auto;
+     
+    }
+
+    .sngle_folow p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

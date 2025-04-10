@@ -1,0 +1,263 @@
+.sinel_slid22{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single_slide{
+   width: 300px;
+   height: 523px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ margin: 0 auto;
+}
+
+.slidim_wrs{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    background: #FCFCFC;
+    border-radius: 12px;
+    height: 442px;
+    
+}
+
+
+
+.single_slide img{
+    max-width: 250px;
+    width: 100%;
+    height: 250px;
+}
+.single_slide p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+color: #666666;    
+}
+.single_slide button{
+    width: 110px;
+    height: 35px;
+    border-radius: 50px;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     justify-content: center;
+     background: #88AE5A;
+
+}
+
+.slid_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slid_title h4{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+color: #101729;    
+}
+.slid_title p{
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+color: #101729;    
+}
+.pop-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.pop-home{
+    background: #FFFFFF;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 89%;
+    overflow-y: auto;
+    z-index: 100;
+    border-radius: 11px;
+}
+
+/*  */
+
+/* Yaha Scroll Enable Karo */
+.pop-content-scroll {
+    /* max-height: 65vh; 
+    overflow-y: auto; 
+    padding-right: 0px;  */
+    max-height: 72vh;
+    overflow-y: auto;
+    padding-right: 0;
+    margin-top: 51px;
+  }
+  
+  /* Hide scrollbar */
+  .pop-content-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .pop-content-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+
+/*  */
+.pop-container h2{
+    color:  rgb(13 172 80);
+    font-weight: 500;
+    font-size: 24px;
+}
+.pop_container p{
+    color:  #101729;
+    font-size: 20px;
+    opacity: 80%;
+    font-weight: 300;
+    margin-top: 18px;
+}
+.pop_right {
+
+}
+.pop_container hr{
+    margin-top: 20px;
+}
+.pop_content hr{
+    margin-top: 20px;
+}
+.pop_container span{
+    font-weight: 500;
+}
+.pop_content p{
+    color: #101729;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.pop_content span{
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.pop_left img{
+    /* width: 100% !important; */
+    max-width: 430px !important;
+    height: auto !important;
+    /* position: sticky !important; */
+    top: 0px !important;
+}
+#pop_leftt img{
+    /* width: 100% !important; */
+    max-width: 430px !important;
+    height: auto !important;
+    position: sticky !important;
+    top: 0px !important;
+}
+@media(max-width:450px){
+    #pop_leftt img {
+        width: 100% !important;
+    }
+}
+.utility{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.cable_ut{
+    display: flex;
+    align-items: center !important;
+    gap: 10px;
+}
+.pop_flex{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    gap: 65px;
+}
+ @media (max-width:600px) {
+    .slid_title h4 ,.slid_title p{
+        text-align: center;
+    }
+ }
+ @media (max-width:352px){
+    .side_flex p{
+        font-size: 13px !important;
+    }
+ }
+ @media (max-width:490px){
+    .our_client_heading{
+        flex-direction: column;
+        text-align: center;
+    }
+ }
+
+.single_slide button:hover{
+    background-color: transparent;
+    border: 1px solid #88AE5A;
+}
+.single_slide button:hover span{
+   color: #101729;
+}
+.single_slide button span{
+    font-family: Wix Madefor Display;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align:center;
+color: #FFFFFF;    
+}
+
+.MdArrowOutward{
+    color: white;
+}
+
+.single_slide button:hover .MdArrowOutward{
+    color: #101729;
+ }
+
+
+ .flsjfljks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content; 
+ }
+
+ @media (max-width:898px){
+    .pop_flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pop_left img {
+        align-items: center;
+    }
+ }
+ .primer {
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+}
+#carft{
+    height: 300px;
+    width: 300px;
+}

@@ -1,0 +1,71 @@
+.our_brand_flex {
+  width: 100%;
+  /* Set container width */
+  height: 200px;
+  /* Set container height */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slider-image {
+  width: 100%;
+  /* Adjust image size */
+  height: auto;
+  position: absolute;
+  animation: slideRightToLeft 20s linear infinite;
+  /* Infinite animation */
+}
+
+/* Keyframes for right-to-left scrolling */
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(100%);
+    /* Start from right */
+  }
+
+  100% {
+    transform: translateX(-100%);
+    /* Move completely to the left */
+  }
+}
+
+.image-slider {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 20px 0;
+}
+
+.slider-track {
+  display: flex;
+  gap: 30px;
+  animation: scroll 10s linear infinite;
+  width: calc(200px * 10); /* Adjust as per images */
+}
+
+.slider-track img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+}
+
+.slider_image1{
+  max-width: 320px;
+  width: 100%;
+}
+.our_stand{
+  margin-top: 30px;
+}
+/* Animation for scrolling */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}

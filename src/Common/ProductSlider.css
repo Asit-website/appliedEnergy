@@ -1,0 +1,32 @@
+.cards-containeeee {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  
+    padding: 50px;
+  }
+  .something h5{
+    text-align: center;
+    font-size: 26px;
+    color: #0DAC50;
+    font-weight: 600;
+  }
+  .whitee {
+    background-color:#F5F5F5 ;
+    padding: 40px 0px 0px 0px ;
+  }
+
+  
+.slid_titlee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 0px 0px ;
+    font-family: 'Poppins',sans-serif;
+}
+
+.subrr {
+    font-size: 20px;
+}

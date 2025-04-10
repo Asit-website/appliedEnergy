@@ -1,0 +1,187 @@
+.casesutdywrap{
+    width: 100%;
+    position: relative;
+    /* height: 648px; */
+
+}
+
+.caseimg{
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     width: 100%;
+     height: 100%;
+}
+
+.casestudy_cont{
+max-width: 1400px;
+width: 100%;
+display: flex;
+/* justify-content: ; */
+/* align-items: flex-end; */
+margin: 0 auto;
+padding: 40px 40px;
+justify-content: space-between;
+gap: 30px;
+
+}
+
+.cs_iner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+.cas_head{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cas_head h3{
+font-family: Poppins;
+font-weight: 400;
+font-size: 32px;
+line-height: 46px;
+text-align: center;
+color: #101729; 
+max-width: 533px;
+}
+
+.cas_head p{
+    border: 2px solid #C7DA66;
+    width: 131.09px;
+
+}
+
+.case_study_back{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.casesyudy{
+width: 100%;
+border-radius: 15px;
+/* padding: 8px 20px; */
+overflow: hidden;
+}
+
+.casdthe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.casdthe h4{
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0%;
+color: #101729;    
+}
+
+.single_casesutdy{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 35px 2px 35px 8px;
+    transition: max-height 0.25s ease-in-out;
+}
+
+.casdthe span{
+font-family: Poppins;
+color: white;
+font-size: 32px;
+line-height: 32px;
+}
+
+.casesyudy p{
+font-family: Wix Madefor Display;
+font-size: 18px;
+font-weight: 500;
+line-height: 30px;
+text-align: left;
+color: #666666;
+}
+
+
+ .rorate90{
+    transition: all 0.4s ;
+    transform: rotate(180deg);
+ } 
+  
+  
+  .case_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s;
+    padding: 0 15px;
+
+  }
+  
+  .case_content.open {
+    max-height: 200px; 
+    padding: 8px 15px 8px 35px ;
+  }
+  
+
+  .newimages{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newimages img{
+      width: 100%;
+      width: 390px;
+  }
+
+   @media (max-width:1200px) {
+    .casestudy_cont{
+         display: flex;
+         flex-direction: column;
+         /* height: fit-content; */
+    }
+    .newimages{
+        display: none;
+    }
+    .cs_iner{
+        max-width: 100%;
+        /* margin-bottom: 100px; */
+    }
+   }
+
+  @media (max-width:550px) {
+    .cas_head{
+        align-items: center;
+    }
+    .cas_head h3{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .cs_iner{
+         /* margin: 0px 20px; */
+         gap: 30px;
+    }
+    .casesutdywrap {
+     /* height: 550px; */
+    }
+    .casesyudy p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .case_content.open{
+        padding: 0px ;
+    }
+    .casesyudy{
+        /* padding: 10px; */
+    }
+  }
+
+.padddd {
+    padding: 0px 13px 0px 23px;
+}
