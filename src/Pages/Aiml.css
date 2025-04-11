@@ -1,0 +1,6 @@
+.ai_ml{
+    padding: initial !important;
+}
+.ai_ml .swiper-pagination{
+    display: none !important;
+}

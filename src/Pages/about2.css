@@ -773,7 +773,9 @@
     .cons3ab h2 {
         text-align: center;
     }
-
+    .cons3ab .vision_lead{
+        text-align: left;
+    }
     .main_conts3,
     .cons3ab {
         gap: 20px;

@@ -13,7 +13,8 @@ import Footer from '../Common/Footer';
 import './Evcharge.css'
 import "swiper/css";
 import "swiper/css/pagination";
-import "./Ups.css"
+import "./Ups.css";
+import './Aiml.css';
 
 function More() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
@@ -78,7 +79,7 @@ function More() {
      </div>
       {/* Contact Form & Map Section */}
 
-<div style={{padding: "5px 110px 50px 110px "}}>
+<div className='ai_ml' style={{padding: "5px 110px 50px 110px "}}>
       <Swiper
         slidesPerView={4}
         spaceBetween={20}

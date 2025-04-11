@@ -63,28 +63,28 @@ function Testimonial2() {
         </div>
 
         <div className="testi_swiper">
-        <Swiper
-  ref={swiperRef}
-  slidesPerView={1}
-  spaceBetween={20}
-  loop={true}
-  autoplay={{
-    delay: 3000,
-    disableOnInteraction: false,
-  }}
-  // pagination={{
-    
-  //   clickable: true,
-  //   dynamicBullets: true,
-  // }}
-  breakpoints={{
-    250: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-  }}
-  modules={[Pagination, Autoplay]}
->
+          <Swiper
+            ref={swiperRef}
+            slidesPerView={1}
+            spaceBetween={20}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            // pagination={{
+
+            //   clickable: true,
+            //   dynamicBullets: true,
+            // }}
+            breakpoints={{
+              250: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+            }}
+            modules={[Pagination, Autoplay]}
+          >
             {data.map((data, index) => (
               <SwiperSlide key={index} className="solveissue">
                 <div className="testi2_sin">
@@ -94,20 +94,21 @@ function Testimonial2() {
                     <p className="test_company">{data.company}</p>
                   </div>
                   <img className='slottt'
-  style={{
-    borderLeft: "2px solid white",
-    width: "300px",  // Set your desired width
-    height: "300px",  // Adjust height automatically to maintain aspect ratio
-  }}
-  src={data?.img}
-  alt="Logo"
-/>
+                    style={{
+                      borderLeft: "1px solid rgb(227, 219, 219)",
+                      width: "300px",
+                      height: "350px",
+                      
+                    }}
+                    src={data?.img}
+                    alt="Logo"
+                  />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
 
-          <hr className="my-10" />
+          <hr className='suss' style={{marginBottom:"20px"}} />
 
           <div className="slidernavga">
             <p></p>

@@ -137,7 +137,7 @@ function More() {
 
           
            
-                <img src="https://res.cloudinary.com/dbcmdtr3r/image/upload/v1743399720/APPLIED_ENERGY._1_q9b1ei.png" alt="Slide Image" />
+                <img src="https://res.cloudinary.com/dgif730br/image/upload/v1744203541/WhatsApp_Image_2025-04-07_at_2.16.23_PM_chybcd.jpg" alt="Slide Image" />
              
               </div>
               <div className="slid_title">

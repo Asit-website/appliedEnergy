@@ -436,7 +436,7 @@ function AboutSec2() {
 
           <section ref={sectionRefs[3]} className="sec3ab" id="sec2abb">
             <div className="cons3ab">
-              <h2>Our Visionary Leader </h2>
+              <h2 className="vision_lead">Our Visionary Leader </h2>
               <div className="main_cos2fds">
                 <h5>{data3[0]?.title || "Default Title"}</h5>
                 <img src={data3[0]?.img} alt={data3[0]?.title} className="leader-img" />
