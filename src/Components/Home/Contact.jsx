@@ -1,7 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
-
 import rajat from '../../assets/rajat.png';
 import calling from '../../assets/calling.png';
 import message from '../../assets/message.png';
@@ -10,10 +9,18 @@ import HomeNavbar from "../../Common/HomeNavbar";
 import Footer from '../../Common/Footer';
 import './contact.css';
 
+
 const validationSchema = Yup.object().shape({
-  name: Yup.string().required('Name is required'),
-  email: Yup.string().email('Invalid email').required('Email is required'),
-  phone: Yup.string().matches(/^[0-9]{10}$/, 'Phone must be 10 digits').required('Phone number is required'),
+  name: Yup.string()
+    .matches(/^[A-Za-z\s]+$/, 'Only alphabets are allowed for name')
+    .max(45, 'Name cannot exceed 45 characters')
+    .required('Name is required'),
+  email: Yup.string()
+    .email('Invalid email format')
+    .required('Email is required'),
+  phone: Yup.string()
+    .matches(/^[0-9]{10}$/, 'Phone must be exactly 10 digits')
+    .required('Phone number is required'),
   message: Yup.string().required('Message is required'),
 });
 
@@ -44,6 +51,7 @@ export default function More() {
   return (
     <div>
       <HomeNavbar />
+
       <div className="header">
         <img src={rajat} alt="Contact Header" className="header-image" />
         <div className="header-overlay">
@@ -61,6 +69,7 @@ export default function More() {
             <a href="tel:+911244330450" className="info-title1">+91 124 4330450</a>
           </div>
         </div>
+
         <div className="vikas">
           <a href="https://www.google.com/maps/search/?api=1&query=Gurugram,+India" target="_blank" rel="noopener noreferrer">
             <img src={location} alt="Location" className="icon-img" />
@@ -72,6 +81,7 @@ export default function More() {
             </a>
           </div>
         </div>
+
         <div className="vikas">
           <a href="mailto:contact@appliedenergytechnologies.com">
             <img src={message} alt="Email" className="icon-img" />
@@ -93,20 +103,51 @@ export default function More() {
           validationSchema={validationSchema}
           onSubmit={handleEmailSend}
         >
-          {({ isSubmitting }) => (
+          {({ isSubmitting, setFieldValue }) => (
             <Form className="contact-form">
               <h2>SEND US A MESSAGE</h2>
 
-              <Field type="text" name="name" placeholder="Name" />
+              <Field
+                type="text"
+                name="name"
+                placeholder="Name"
+                autoComplete="off"
+                onInput={(e) => {
+                  const value = e.target.value.replace(/[^A-Za-z\s]/g, '');
+                  e.target.value = value;
+                  setFieldValue('name', value);
+                }}
+              />
               <ErrorMessage name="name" component="div" className="error" />
 
-              <Field type="email" name="email" placeholder="Email" />
+              <Field
+                type="email"
+                name="email"
+                placeholder="Email"
+                autoComplete="off"
+              />
               <ErrorMessage name="email" component="div" className="error" />
 
-              <Field type="text" name="phone" placeholder="Phone number" />
+              <Field
+                type="tel"
+                name="phone"
+                placeholder="Phone number"
+                autoComplete="off"
+                inputMode="numeric"
+                onInput={(e) => {
+                  let value = e.target.value.replace(/[^0-9]/g, '');
+                  if (value.length > 10) value = value.slice(0, 10);
+                  e.target.value = value;
+                  setFieldValue('phone', value);
+                }}
+              />
               <ErrorMessage name="phone" component="div" className="error" />
 
-              <Field as="textarea" name="message" placeholder="Write something" />
+              <Field
+                as="textarea"
+                name="message"
+                placeholder="Write something"
+              />
               <ErrorMessage name="message" component="div" className="error" />
 
               <button type="submit" disabled={isSubmitting}>

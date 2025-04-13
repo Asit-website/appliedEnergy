@@ -20,7 +20,7 @@ function More() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
   const [pop, setPopi] = useState(false);
   const [popo, setPopp] = useState(false);
-
+  const [buffer, setbuffer] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -73,6 +73,8 @@ function More() {
           </div>
         </div>
 
+
+
         <div className='vikas'>
           <img src={location} alt="Location" className="icon-img" />
           <div className="info-box blue">
@@ -81,6 +83,8 @@ function More() {
           </div>
         </div>
 
+
+
         <div className='vikas'>
           <img src={message} alt="Email" className="icon-img" />
           <div className="info-box green">
@@ -88,7 +92,8 @@ function More() {
             <p className="info-title1">contact@appliedenergytechnologies.com</p>
           </div>
         </div>
-      </div> */}
+      </div> 
+      */}
 
       <hr />
 
@@ -165,7 +170,7 @@ function More() {
             </div>
           </SwiperSlide> */}
           <SwiperSlide className="sinel_slid22" >
-            <div className="single_slide">
+            <div onClick={() =>setbuffer(true)} className="single_slide">
               <img className="testy" width={40} height={40} src={kij} alt="kij" />
               <div className="slidim_wrs">
 
@@ -303,6 +308,8 @@ function More() {
         </div>
       }
 
+
+
       {
         popo &&
         <div className="pop-container">
@@ -414,6 +421,142 @@ function More() {
           </div>
         </div>
       }
+
+      
+{
+        buffer &&
+        <div className="pop-container">
+          <div className="pop-home">
+            <img onClick={() =>setbuffer(false)} className="primer" src={primer} alt="primer" />
+            <div className="pop-content-scroll">
+              <div className="pop_flex">
+                <div className="pop_left" id='pop_lettt'>
+                  <img id="carft" src="https://res.cloudinary.com/dbcmdtr3r/image/upload/v1743637636/Screenshot_3-4-2025_430_-removebg-preview_ev3kkj.png" alt="" />
+                </div>
+
+                <div className="pop_right">
+                  <div className="pop_container">
+                    <h2>Ev Charger 60</h2>
+                    <p>AET- <span>60kw</span>  Version</p>
+                  </div>
+
+                  <div className="pop_content">
+                    <hr />
+                    <p><span className="label"> Voltage:</span> 415/480 V AC±10%</p>
+            
+                    <p><span className="label">Frequency:</span> 50/60 Hz ±10%</p>
+                    <p><span className="label"> Input Wiring:</span> 3P+N+PE</p>
+                    <hr />
+
+                    <div className="utility">
+                      <p><span className="label"> Power:</span>  60 kW</p>
+                   
+                     
+                    
+                    </div>
+                    <hr />
+                    <div className="utility">
+                    <p><span className="label"> Voltage:</span> 200 VDC-1000 VDC</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                    <p><span className="label">  Max current:</span> 200 A</p>  
+</div>
+<hr />
+<div className="utility">
+<p><span className="label">   Two outlets:</span>  CCS 2+ CCS 2</p>  
+</div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> HDMI:</span> 7" high brightness</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Network:</span>  Standard: Ethernet & GPRS, Optional -Wi-Fi</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label">Protocol:</span> OCPP 1.6J, Compatible to OCPP 2.0J</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Electrical:</span> Protection against short circuits, over-voltage, under-voltage, over
+temperature, surge, lighting; Detection of grounding, insulation, phase
+ Sequence, Leakage current</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Standards:</span> IEC61851-23/-24, IEC 62196-3, DIN70121, ISO15118</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Online:</span>  APP based,  RFID: ISO 14443 mifare1,  ISO 15118 Plug & Charge</p>
+                    </div>
+               
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Offline:</span> Whitelisted RFID card,  Password</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label">Dimension:</span>  (HxWxD) 1320 x 660 x 236 mm.</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Weight:</span> 110Kg</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Cable:</span>  Standard: 5 m; Optional: 7 m; (Cable management system is optional)</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label">Display:</span> 7 Inches Touch Screen with Shell</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Standby Power:</span>  More then 30 W</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Installation:</span> Ground Mounted</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Storage Temp:</span> -40°C to +80° C  </p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label">Operation Temp:</span> -30°C to +55°C</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Humidity:</span>  5% to 95%</p>
+                    </div>
+                    <hr />
+                    <div className="utility">
+                      <p><span className="label"> Altitude:</span>  More then 2000 meters.</p>
+                 
+                      <p><span className="label">  Noise:</span>  More then 60 dB (A).</p>
+                    
+                      <p><span className="label">   Warranty:</span>   3 years.</p>
+                    </div>
+                 
+                   
+                  </div>
+                  <hr />
+
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+
+
       {/* <OurClient /> */}
       {/* <Contacts /> */}
 

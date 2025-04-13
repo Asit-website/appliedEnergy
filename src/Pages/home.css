@@ -28,6 +28,10 @@
     align-items: center;
     justify-content: center;
 }
+.sing_ho_lg:hover{
+    background-color: #0DAC50;
+    color: #fff;
+}
 
 .hero_sec_con {
     max-width: 802px;
